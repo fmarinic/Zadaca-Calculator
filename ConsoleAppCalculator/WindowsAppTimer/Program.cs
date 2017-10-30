@@ -50,7 +50,7 @@ namespace WindowsAppTimer
         }
         private static void WriteToFile(string text)
         {
-            string path = "C:\\Users\\Ivan\\ServiceLog.txt";
+            string path = "E:\\ServiceLog.txt";
             using (StreamWriter writer = new StreamWriter(path, true))
             {
                 writer.WriteLine(string.Format(text, DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")));
